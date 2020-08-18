@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A simple performance counter</title>
+		<script>
+			maxCount = 10000;
+		  console.time("My operation"); 						 //#A
+			for(var n = 0; n < maxCount; n++){ 				 //#B
+			  /*perform the operation to be measured*/ //#B
+			}                                          //#B
+			console.timeEnd("My operation");					 //#C
+
+			//#A 开始计时器
+			//#B 执行多次操作
+			//#C 停止计时器
+		</script>
+	</head>
+	<body>
+		Outputs to the console (press F12)
+	</body>
+</html>
